@@ -158,7 +158,7 @@ install_php_repo () {
         elif [ "${REPO_VER}" = '8' ]; then
             centos_install_epel
         else
-            if [ "${REPO_OS}" = 'fedora' ];
+            if [ "${REPO_OS}" = 'fedora' ]; then
                 fedora_install_remi
             else
                 centos_install_remi
